@@ -11,7 +11,7 @@ var strawberry = document.querySelector("li:last-child");
 var newFruit = document.createElement("li");
 var newText = document.createTextNode("Lemon");
 
-01
+//01
 newFruit.appendChild(newText); // "Lemon"
 fruit.appendChild(newFruit); // + <li>Lemon</li>
 
