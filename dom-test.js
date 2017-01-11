@@ -30,7 +30,7 @@ var red = document.querySelectorAll(".red");
 color.removeChild(red[0]);
 color.removeChild(red[1]);
 
-//05
+// 05
 // blue의 부모 중 section가 있는지 확인한다.
 // section 태그의 자식 중 h2를 삭제한다.
 
