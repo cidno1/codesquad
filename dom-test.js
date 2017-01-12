@@ -11,24 +11,40 @@ var strawberry = document.querySelector("li:last-child");
 var newFruit = document.createElement("li");
 var newText = document.createTextNode("Lemon");
 
-// 01
+// 01-1
+
 newFruit.appendChild(newText); // "Lemon"
 fruit.appendChild(newFruit); // + <li>Lemon</li>
 
 
-// 02
+// 01-2
+
+orange.insertAdjacentHTML("beforeend","<li>Lemon</li>")
+
+
+// 02-1
+
 fruit.insertBefore(newFruit,orange);
 
+
+// 02-2
+
+orange.insertAdjacentHTML("beforebegin","<li>Lemon</li>")
+
 // 03
+
 var appleSave = fruit.removeChild(apple);
 fruit.insertBefore(appleSave,strawberry);
 
+
 // 04
+
 var color = document.querySelector("ul:nth-child(2)");
 var red = document.querySelectorAll(".red");
 
 color.removeChild(red[0]);
 color.removeChild(red[1]);
+
 
 // 05
 // blue의 부모 중 section가 있는지 확인한다.
